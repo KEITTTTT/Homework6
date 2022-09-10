@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        task1();task2();
+        task1();task2();task3();task4();task5();
     }
     public static void task1(){
         // Задача 1
@@ -35,9 +35,59 @@ public class Main {
 
         }
         public static void task2(){
-            // Задача 1
+            // Задача 2.1
+            int investment = 15000;
+            for(int i = 1; investment <= 12_000_000; i++){
+                investment = investment + investment*7/100;
+                System.out.println(" Месяц " + i + " Сумма накоплений " + investment);
+            }
+            }
+
+            public static void task3(){
+
+                // Задача 2.2
+                int investment = 15000;
+                for(int i = 1; investment <= 12_000_000; i++) {
+                    investment = investment + investment * 7 / 100;
+                    if (i % 6 == 0) {
+                        System.out.println(" Месяц " + i + " Сумма накоплений " + investment);
+                    }
+                }
+    }
+    public static void task4(){
+        // Задача 2.3
+        int investment = 15000;
+        int month = 9*12;
+        for(int i = 1;i <= 108 ; i++) {
+            investment = investment + investment * 7 / 100;
+            if (i % 6 == 0) {
+                System.out.println(" Месяц " + i + " Сумма накоплений " + investment);
+            }
+        }
+        // Задача 2.4
+
+        for(int i = 2; i < 31 ; i = i +7) {
+                System.out.println(" Сегодя пятница " + i + " число, необходимо подготовить отчет " );}
+    }
+    public static void task5() {
+        // Задача 3.1
+
+        for (int i = 0; i < 2100; i = i +79) {
+                if (i > 1822 && i < 2122) {
+                System.out.println(i);
+            }
+            }
+            // Задача 3.2
+        int a = 2;
+        for (int b = 1; b < 10; b++){
+
+
+            System.out.println(a);
+        }
+
+
+
 
 
     }
-
 }
